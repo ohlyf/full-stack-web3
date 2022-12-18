@@ -12,6 +12,6 @@ export class User extends BaseModelWithUUIDPrimary {
   @Column()
   name: string;
 
-  @Column()
+  @Column({ nullable: true })
   address: string;
 }
